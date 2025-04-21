@@ -1,0 +1,18 @@
+#Mochammad Surya Dharma
+#241552018155893
+#Teknik Informatika
+
+import math
+
+def bilangan_prima(n):
+  if n < 2:
+    return False
+  for i in range(2, int(math.sqrt(n)) + 1):
+    if n % i == 0:
+      return False
+  return True
+Angka=int(input("masukkan bilangan "))
+
+print(bilangan_prima(Angka))
+#False jika bilangan bukan prima
+#True jika bilangan tersebut prima
